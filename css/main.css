@@ -1,0 +1,46 @@
+:root {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+.pointer {
+  cursor: pointer;
+}
+/* vars */
+:root {
+  --body-color: #0f0f10;
+  --text-color: #fff;
+  --darker-text-color: #d5d5d5;
+  --font-size-l: 1.284rem;
+}
+body {
+  background-color: var(--body-color);
+}
+
+/* navbar */
+.nav-menu a,
+.close-nav {
+  color: transparent;
+  font-weight: 800;
+  font-size: var(--font-size-l);
+  background: linear-gradient(rgb(236, 236, 236), rgb(103, 103, 103));
+  background-clip: text;
+  transition: 0.4s;
+}
+.nav-menu a:hover,
+.close-nav:hover {
+  background: white;
+  background-clip: text;
+}
+.nav-list {
+    background-color: var(--body-color);
+    /* transform: translateY(-100%); */
+}
