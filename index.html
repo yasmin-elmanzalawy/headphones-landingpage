@@ -11,30 +11,94 @@
     <title>Headphones landing page</title>
 </head>
 
+
+<!--header and navbar -->
+<header class="d-flex align-items-center justify-content-between">
+
+    <div class="logo">
+        <a href="#"><img class="w-100" src="./imgs/favicon.png" alt="the logo picture"></a>
+    </div>
+    <button id="toggle" class="toggle"><i id="toggleIcon" class="fas fa-border-all "></i></button>
+    <nav>
+        <ul data-visible="false" id="nav-menu" class="nav-menu d-flex gap-4">
+            <li><a href="home">HOME</a></li>
+            <li><a href="specs">SPECS</a></li>
+            <li><a href="case">CASE</a></li>
+            <li><a href="products">PRODUCTS</a></li>
+        </ul>
+    </nav>
+</header>
+
 <body>
-    <!--header and navbar -->
-    <header>
-        <nav class="d-flex justify-content-between ">
-            <div>
-                <a class="m-3" href="#"><img class="m-3" src="./imgs/favicon.png" alt="the logo picture"></a>
+
+
+
+    <!-- home start -->
+
+    <div class="container home-container">
+        <div class="row container">
+            <div class="col-sm-6 position-relative">
+                <div>
+                    <div class="home-img">
+                        <img class="w-100 " src="./imgs/home.png" alt="beats studio 3 ">
+                    </div>
+                </div>
             </div>
-            <div class="nav-list position-absolute position-relative start-0 end-0 justify-content-center text-center "
-                id="nav-list">
-                <ul class="py-5 gap-3 d-flex flex-column nav-menu ">
-                    <li><a href="home">HOME</a></li>
-                    <li><a href="specs">SPECS</a></li>
-                    <li><a href="case">CASE</a></li>
-                    <li><a href="products">PRODUCTS</a></li>
-                </ul>
-                <i class="fas toggle position-absolute top-0 m-3 end-0 pointer fs-3 fa-x close-nav" id="close-nav"></i>
+            <div class="col-sm-6">
+                <div>
+                    <div class="home-content">
+                        <h1 class="home-head">On ear</h1>
+                        <h3 class="home-subhead
+                        mb-5">Beats 3</h3>
+                        <div class="overview-sec">
+                            <h4 class="">Overview</h4>
+                            <p class="">Enjoy award-winning Beats sound with wireless listening freedom and a sleek,
+                                streamlined
+                                design with
+                                comfortable padded earphones, delivering first-rate playback.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <i class="nav-toggle toggle fas fa-border-all fs-3 m-3 text-white pointer" id="nav-toggle"></i>
-        </nav>
-    </header>
+
+
+        </div>
+        <button class="d-block add-to-bag fw-bold">Add to bag $299</button>
+
+        <div class="container mt-5">
+            <div class="row">
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="p-3 sponser">
+                        <img class="w-100" src="./imgs/sponsor1.png" alt="apple">
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="p-3 sponser">
+                        <img class="w-100" src="./imgs/sponsor2.png" alt="spotify">
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="p-3 sponser">
+                        <img class="w-100" src="./imgs/sponsor3.png" alt="amazon">
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="p-3 sponser">
+                        <img class="w-100" src="./imgs/sponsor4.png" alt="youtube">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
     <script src="./js/jquery-git.min.js"></script>
     <script src="./js/bootstrap.bundle.min.js"></script>
-    <script src="./js/index.js"></script>
+    <script defer src="./js/index.js"></script>
 </body>
 
 </html>

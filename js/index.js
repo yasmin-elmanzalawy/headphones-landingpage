@@ -1,13 +1,14 @@
-let closeNav = document.getElementById('close-nav');
-let navList = document.getElementById('nav-list');
-let navtoggle = document.getElementById('nav-toggle');
-let toggle= document.getElementsByClassName('.toggle');
+const navMenu = document.getElementById("nav-menu");
+const toggle = document.getElementById("toggle");
+const toggleIcon = document.getElementById("toggleIcon");
 
-
-// navbar start
-$('.toggle').on('click', () => {
-    $('#nav-list').slideToggle('slow');
-    console.log('hi');
+toggle.addEventListener("click", () => {
+  const visible = navMenu.getAttribute("data-visible");
+  if (visible === 'false') {
+    navMenu.setAttribute('data-visible', true);
+    toggleIcon.classList.replace('fa-border-all','fa-x')
+}else{
+    navMenu.setAttribute('data-visible', false);
+    toggleIcon.classList.replace('fa-x' , 'fa-border-all')
+  }
 });
-// navbar end
-
