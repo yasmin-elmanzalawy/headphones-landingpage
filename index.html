@@ -13,14 +13,13 @@
 
 
 <!--header and navbar -->
-<header class="d-flex align-items-center justify-content-between">
-
+<header class="container d-flex align-items-center justify-content-between">
     <div class="logo">
         <a href="#"><img class="w-100" src="./imgs/favicon.png" alt="the logo picture"></a>
     </div>
     <button id="toggle" class="toggle"><i id="toggleIcon" class="fas fa-border-all "></i></button>
     <nav>
-        <ul data-visible="false" id="nav-menu" class="nav-menu d-flex gap-4">
+        <ul data-visible="false" id="nav-menu" class="nav-menu d-flex gap-3">
             <li><a href="home">HOME</a></li>
             <li><a href="specs">SPECS</a></li>
             <li><a href="case">CASE</a></li>
@@ -29,24 +28,20 @@
     </nav>
 </header>
 
+
+
 <body>
-
-
-
-    <!-- home start -->
-
-    <div class="container home-container">
-        <div class="row container">
-            <div class="col-sm-6 position-relative">
-                <div>
-                    <div class="home-img">
-                        <img class="w-100 " src="./imgs/home.png" alt="beats studio 3 ">
+    <main>
+        <!-- home start -->
+        <section id="home" class="container home-container">
+            <div class="row container">
+                <div class="col-sm-6 position-relative  ">
+                    <div class="home-img overflow-hidden">
+                        <img class="w-100" src="./imgs/home.png" alt="beats studio 3 ">
                     </div>
                 </div>
-            </div>
-            <div class="col-sm-6">
-                <div>
-                    <div class="home-content">
+                <div class="col-sm-6 home-content-container">
+                    <div class="home-content px-3">
                         <h1 class="home-head">On ear</h1>
                         <h3 class="home-subhead
                         mb-5">Beats 3</h3>
@@ -60,40 +55,106 @@
                     </div>
                 </div>
             </div>
+            <button class="d-block add-to-bag fw-bold">Add to bag $299</button>
+            <div class="container mt-5">
+                <div class="row container">
 
-
-        </div>
-        <button class="d-block add-to-bag fw-bold">Add to bag $299</button>
-
-        <div class="container mt-5">
-            <div class="row">
-
-                <div class="col-lg-3 col-md-6">
-                    <div class="p-3 sponser">
-                        <img class="w-100" src="./imgs/sponsor1.png" alt="apple">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="p-3 sponser m-auto">
+                            <img class="w-100" src="./imgs/sponsor1.png" alt="apple">
+                        </div>
                     </div>
-                </div>
 
-                <div class="col-lg-3 col-md-6">
-                    <div class="p-3 sponser">
-                        <img class="w-100" src="./imgs/sponsor2.png" alt="spotify">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="p-3 sponser m-auto">
+                            <img class="w-100" src="./imgs/sponsor2.png" alt="spotify">
+                        </div>
                     </div>
-                </div>
 
-                <div class="col-lg-3 col-md-6">
-                    <div class="p-3 sponser">
-                        <img class="w-100" src="./imgs/sponsor3.png" alt="amazon">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="p-3 sponser m-auto">
+                            <img class="w-100" src="./imgs/sponsor3.png" alt="amazon">
+                        </div>
                     </div>
-                </div>
 
-                <div class="col-lg-3 col-md-6">
-                    <div class="p-3 sponser">
-                        <img class="w-100" src="./imgs/sponsor4.png" alt="youtube">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="p-3 sponser m-auto">
+                            <img class="w-100" src="./imgs/sponsor4.png" alt="youtube">
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
+        </section>
+
+
+
+        <!-- specs section start-->
+        <section id="specs" class="container my-5">
+
+            <div class="my-5">
+                <h2 class="text-center specs-title">SPECS</h2>
+            </div>
+            <div class="row">
+                <div class="col-6">
+                    <div class="text-center">
+                        <div class="ps-5 row">
+                            <div><i class="fab fa-bluetooth-b"></i></div>
+                            <div>
+                                <h5>Connection<h5>
+                            </div>
+                            <div>
+                                <p>Bluetooth v5.2
+                                </p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div><i class="fa-solid fa-battery-full"></i></div>
+                            <div>
+                                <h5>Battery<h5>
+                            </div>
+                            <div>
+                                <p>Duration 40h
+                                </p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div><i class="fa-solid fa-bolt"></i></i></div>
+                            <div>
+                                <h5>Load
+                                    <h5>
+                            </div>
+                            <div>
+                                <p>Fast charge 4.2-AAC
+
+                                </p>
+                            </div>
+                        </div>
+                        <div class="ps-5 row">
+                            <div><i class="fa-solid fa-microphone-lines"></i></div>
+                            <div>
+                                <h5>Microphone<h5>
+                            </div>
+                            <div>
+                                <p>Supports Apple Siri <br>
+                                    and Google
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 d-flex align-items-center justify-content-center">
+                    <div class="specs-img m-auto "><img class="w-100" src="./imgs/specs.png" alt=""></div>
+                </div>
+
+            </div>
+        </section>
+        <!-- specs section end-->
+    </main>
+
+
+
+
+
 
 
     <script src="./js/jquery-git.min.js"></script>

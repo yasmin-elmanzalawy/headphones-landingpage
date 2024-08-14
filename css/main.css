@@ -3,19 +3,11 @@
   padding: 0;
   margin: 0;
 }
-body {
-  padding: 0;
-  margin: 0;
-  color: #d5d5d5;
-}
+
 ul {
   list-style: none;
   margin: 0;
   padding: 0;
-}
-a {
-  text-decoration: none;
-  color: white;
 }
 .pointer {
   cursor: pointer;
@@ -23,69 +15,73 @@ a {
 /* vars */
 :root,
 body {
-  --body-color: #0f0f10;
-  --text-color: #fff;
-  --darker-text-color: #d5d5d5;
-  --font-size-l: 1.284rem;
   background-image: linear-gradient(rgb(82, 7, 114), black);
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
   background-attachment: fixed;
+  padding: 0;
+  margin: 0;
+  color: #d5d5d5;
 }
-
-/* navbar */
+/* navbarn and header start */
 header {
-  padding: 20px;
+position: fixed;
+left: 0;
+right: 0;
+  padding:20px;
 }
 .logo {
   width: 30px;
 }
-
+nav{
+  z-index: 999999;
+}
 .nav-menu a {
-  background-image: linear-gradient(rgb(62, 62, 62), rgb(255, 255, 255));
+  text-decoration: none;
+  color: white;
   font-size: 1.265rem;
-  font-weight: 800;
-  background-clip: text;
-  color: transparent;
+  font-weight: 700;
+  transition: 0.4s;
 }
 .nav-menu a:hover,
 .toggle:hover {
   background-image: linear-gradient(rgb(95, 95, 95), rgb(255, 255, 255));
+  background-clip: text;
+  color: transparent;
 }
 .toggle {
   display: none;
 }
+
+/* navbarn and header end */
+
 /* home */
-.home-container {
-  height: 100vh;
+
+.home-img {
+  margin: auto;
+  margin-top: -100px;
+  width: 250px;
 }
 .home-head {
   font-size: 3rem;
   font-weight: 900;
-  background-image: linear-gradient(rgb(231, 231, 231), rgb(85, 85, 85));
+  background: linear-gradient(rgb(231, 231, 231), rgb(85, 85, 85));
   font-weight: 700;
   background-clip: text;
   color: transparent;
   padding-left: 20px;
 }
 
-.home-img {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  top: -100px;
-  width: 250px;
-}
-.home-subhead{
+.home-subhead {
   font-weight: 600;
-  margin-top:-20px ;
+  margin-top: -20px;
 }
-.home-content{
+.home-content {
   margin-top: 100px;
 }
-.add-to-bag{
-  margin:100px auto 0 auto;
+.add-to-bag {
+  margin: 100px auto 0 auto;
   padding: 10px 30px;
   border: none;
   color: white;
@@ -93,14 +89,30 @@ header {
   border-radius: 10px;
   transition: 0.4s;
 }
-.add-to-bag:hover{
+.add-to-bag:hover {
   background: linear-gradient(rgb(71, 71, 71), rgb(5, 5, 5));
 }
-.sponser
-{
-  width: 150px;
+.sponser {
+  width: 125px;
 }
+/* specs start */
+.specs-title{
+  background-image: linear-gradient(rgb(58, 58, 58), rgb(165, 165, 165));
+  background-clip: text;
+  color: transparent;
+  font-size: 3rem;
+  font-weight: 700;
+}
+.specs-img{
+  max-width: 300px;
+}
+/* specs end */
+
+
+/* responsive design for smaller screens */
+
 @media screen and (max-width: 575px) {
+  /* navbar and header start */
   .nav-menu {
     background-color: hsl(0, 0%, 0%, 0.6);
     backdrop-filter: blur(1rem);
@@ -114,7 +126,6 @@ header {
   .nav-menu[data-visible="false"] {
     transform: translateX(100%);
   }
-
   .toggle {
     display: block;
     z-index: 9999;
@@ -129,17 +140,21 @@ header {
     top: 10px;
     right: 30px;
   }
+  /* navbar and header end */
+
+  /* home start */
   .home-img {
     position: absolute;
-    top: -170px;
-    transform: translateX(20%);
+    top: -100px;
     width: 200px;
+    right: 0;
+
   }
-  .home-img img {
-    width: 100%;
-    z-index: -1111;
-  }
- .overview-sec{
-  margin-top: 100px;
+ .home-content-container{
+  z-index: 11;
  }
+  .overview-sec {
+    margin-top: 100px;
+  }
+  /* home end */
 }
