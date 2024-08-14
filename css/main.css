@@ -97,7 +97,7 @@ nav{
 }
 /* specs start */
 .specs-title{
-  background-image: linear-gradient(rgb(58, 58, 58), rgb(165, 165, 165));
+  background-image: linear-gradient(rgb(58, 58, 58), rgb(229, 229, 229));
   background-clip: text;
   color: transparent;
   font-size: 3rem;
@@ -108,6 +108,28 @@ nav{
 }
 /* specs end */
 
+/* case start */
+.case-title{
+  background-image: linear-gradient(rgb(58, 58, 58), rgb(229, 229, 229));
+  background-clip: text;
+  color: transparent;
+  font-size: 3rem;
+  font-weight: 700;
+}
+.case-img{
+  max-width: 250px;
+}
+.case-btn{
+  color: white;
+  margin: 5px;
+  padding: 10px 20px;
+  background-color: rgba(0, 0, 0, 0.375);
+  transition: 0.3s;
+}
+.case-btn:hover{
+  background-color: rgb(33, 33, 33);
+}
+/* case end */
 
 /* responsive design for smaller screens */
 
@@ -121,7 +143,7 @@ nav{
     flex-direction: column;
     padding: min(10vh, 10rem);
     transition: 0.4s;
-    z-index: 1000;
+    z-index: 99999;
   }
   .nav-menu[data-visible="false"] {
     transform: translateX(100%);
