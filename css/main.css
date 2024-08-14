@@ -130,6 +130,27 @@ nav{
   background-color: rgb(33, 33, 33);
 }
 /* case end */
+/* shop now start */
+.shop-row{
+  max-width: 1000px;
+  margin: auto;
+  background-color: rgba(9, 9, 9, 0.43);
+}
+.discount-img{
+  padding: 50px;
+  max-width: 400px;
+}
+.shop-btn{
+  color: white;
+  margin: 5px;
+  padding: 10px 20px;
+  background-color: rgba(0, 0, 0, 0.375);
+  transition: 0.3s;
+}
+.shop-btn:hover{
+  background-color: rgb(33, 33, 33);
+}
+/* shop now end */
 
 /* responsive design for smaller screens */
 
