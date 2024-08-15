@@ -24,6 +24,16 @@ body {
   margin: 0;
   color: #d5d5d5;
 }
+.section{
+  max-width: 1000px;
+}
+.title{
+  background-image: linear-gradient(rgb(58, 58, 58), rgb(229, 229, 229));
+  background-clip: text;
+  color: transparent;
+  font-size: 3rem;
+  font-weight: 700;
+}
 /* navbarn and header start */
 header {
 position: fixed;
@@ -57,22 +67,11 @@ nav{
 /* navbarn and header end */
 
 /* home */
-
 .home-img {
   margin: auto;
   margin-top: -100px;
   width: 250px;
 }
-.home-head {
-  font-size: 3rem;
-  font-weight: 900;
-  background: linear-gradient(rgb(231, 231, 231), rgb(85, 85, 85));
-  font-weight: 700;
-  background-clip: text;
-  color: transparent;
-  padding-left: 20px;
-}
-
 .home-subhead {
   font-weight: 600;
   margin-top: -20px;
@@ -96,26 +95,13 @@ nav{
   width: 125px;
 }
 /* specs start */
-.specs-title{
-  background-image: linear-gradient(rgb(58, 58, 58), rgb(229, 229, 229));
-  background-clip: text;
-  color: transparent;
-  font-size: 3rem;
-  font-weight: 700;
-}
+
 .specs-img{
   max-width: 300px;
 }
 /* specs end */
 
 /* case start */
-.case-title{
-  background-image: linear-gradient(rgb(58, 58, 58), rgb(229, 229, 229));
-  background-clip: text;
-  color: transparent;
-  font-size: 3rem;
-  font-weight: 700;
-}
 .case-img{
   max-width: 250px;
 }
@@ -151,6 +137,37 @@ nav{
   background-color: rgb(33, 33, 33);
 }
 /* shop now end */
+
+/* product start */
+.product-box{
+  background-color: rgba(0, 0, 0, 0.589);
+  width: 200px;
+  height: 200px;
+  padding: 10px;
+  border-radius: 10px;
+  position: relative;
+}
+.product-content{
+  top: -30px;
+  position: absolute;
+  right: 0;
+  left: 0;
+  padding:0 20px;
+}
+.product-img{
+  max-width: 100px;
+}
+.product-content i{
+background-color: #222222a5;
+padding:10px 20px;
+border-radius: 7px;
+transition: 0.4s;
+}
+.product-content i:hover{
+background-color: #3e3e3ea5;
+
+}
+/* product end */
 
 /* responsive design for smaller screens */
 
