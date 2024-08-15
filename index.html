@@ -13,19 +13,21 @@
 
 
 <!--header and navbar -->
-<header class="container d-flex align-items-center justify-content-between">
-    <div class="logo">
-        <a href="#"><img class="w-100" src="./imgs/favicon.png" alt="the logo picture"></a>
+<header>
+    <div class="d-flex align-items-center justify-content-between ">
+        <div class="logo">
+            <a href="#"><img class="w-100" src="./imgs/favicon.png" alt="the logo picture"></a>
+        </div>
+        <button id="toggle" class="toggle"><i id="toggleIcon" class="fas fa-border-all "></i></button>
+        <nav>
+            <ul data-visible="false" id="nav-menu" class="nav-menu d-flex gap-3">
+                <li><a href="home">HOME</a></li>
+                <li><a href="specs">SPECS</a></li>
+                <li><a href="case">CASE</a></li>
+                <li><a href="products">PRODUCTS</a></li>
+            </ul>
+        </nav>
     </div>
-    <button id="toggle" class="toggle"><i id="toggleIcon" class="fas fa-border-all "></i></button>
-    <nav>
-        <ul data-visible="false" id="nav-menu" class="nav-menu d-flex gap-3">
-            <li><a href="home">HOME</a></li>
-            <li><a href="specs">SPECS</a></li>
-            <li><a href="case">CASE</a></li>
-            <li><a href="products">PRODUCTS</a></li>
-        </ul>
-    </nav>
 </header>
 
 
@@ -208,7 +210,8 @@
                                 <h5 class="fw-bolder">Black</h5>
                                 <div class=" d-flex align-items-center justify-content-between">
                                     <p class="m-0 fw-bold">$249</p>
-                                    <button class="bg-transparent border-0 text-white"> <i class="fa-solid fa-bag-shopping pointer px-2"></i></button>
+                                    <button class="bg-transparent border-0 text-white"> <i
+                                            class="fa-solid fa-bag-shopping pointer px-2"></i></button>
                                 </div>
                             </div>
                         </div>
@@ -224,7 +227,8 @@
                                 <h5 class="fw-bolder">Red Black</h5>
                                 <div class=" d-flex align-items-center justify-content-between">
                                     <p class="m-0 fw-bold">$249</p>
-                                    <button class="bg-transparent border-0 text-white"> <i class="fa-solid fa-bag-shopping pointer px-2"></i></button>
+                                    <button class="bg-transparent border-0 text-white"> <i
+                                            class="fa-solid fa-bag-shopping pointer px-2"></i></button>
                                 </div>
                             </div>
                         </div>
@@ -241,7 +245,8 @@
                                 </h5>
                                 <div class=" d-flex align-items-center justify-content-between">
                                     <p class="m-0 fw-bold">$249</p>
-                                    <button class="bg-transparent border-0 text-white"> <i class="fa-solid fa-bag-shopping pointer px-2"></i></button>
+                                    <button class="bg-transparent border-0 text-white"> <i
+                                            class="fa-solid fa-bag-shopping pointer px-2"></i></button>
                                 </div>
                             </div>
                         </div>
@@ -257,7 +262,8 @@
                                 <h5 class="fw-bolder">Blue</h5>
                                 <div class=" d-flex align-items-center justify-content-between">
                                     <p class="m-0 fw-bold">$249</p>
-                                    <button class="bg-transparent border-0 text-white"> <i class="fa-solid fa-bag-shopping pointer px-2"></i></button>
+                                    <button class="bg-transparent border-0 text-white"> <i
+                                            class="fa-solid fa-bag-shopping pointer px-2"></i></button>
                                 </div>
                             </div>
                         </div>
@@ -274,7 +280,8 @@
                                 </h5>
                                 <div class=" d-flex align-items-center justify-content-between">
                                     <p class="m-0 fw-bold">$249</p>
-                                    <button class="bg-transparent border-0 text-white"> <i class="fa-solid fa-bag-shopping pointer px-2"></i></button>
+                                    <button class="bg-transparent border-0 text-white"> <i
+                                            class="fa-solid fa-bag-shopping pointer px-2"></i></button>
                                 </div>
                             </div>
                         </div>
@@ -290,7 +297,8 @@
                                 <h5 class="fw-bolder">MidnightBlack</h5>
                                 <div class=" d-flex align-items-center justify-content-between">
                                     <p class="m-0 fw-bold">$249</p>
-                                    <button class="bg-transparent border-0 text-white"> <i class="fa-solid fa-bag-shopping pointer px-2"></i></button>
+                                    <button class="bg-transparent border-0 text-white"> <i
+                                            class="fa-solid fa-bag-shopping pointer px-2"></i></button>
                                 </div>
                             </div>
                         </div>
@@ -299,6 +307,55 @@
             </div>
         </section>
         <!-- products section end -->
+
+        <!-- footer start -->
+        <footer class="mt-5">
+            <div class="container footer-container">
+                <div class="row container m-auto">
+                    <div class="col-lg-3 mt-5 m-auto col-md-6">
+                        <div>
+                            <div class="logo-container">
+                                <img class="m-auto d-block" src="./imgs/favicon.png" alt="logo">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 mt-5 m-auto col-md-6">
+                        <div class="text-center">
+                            <h5>Products</h5>
+                            <div>
+                                <p>Headphones</p>
+                                <p>Earphones</p>
+                                <p>Earbuds</p>
+                                <p>Accesories</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 mt-5 m-auto col-md-6">
+                        <div class="text-center">
+                            <h5>Support</h5>
+                            <div>
+                                <p>Product help</p>
+                                <p>Register</p>
+                                <p>Updates</p>
+                                <p>Provides</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 mt-5 m-auto col-md-6">
+                        <div class="subscribe d-flex flex-nowrap m-auto">
+                            <label class="d-flex justify-content-between flex-nowrap " for="email">
+                                <input class=" bg-transparent" id="email" name="email" placeholder="Email" type="email">
+                                <button class=" btn ">Subscribe</button>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-5 copyright">
+                <p class="text-center m-0">©yasminelamnzalawy. All right reserved</p>
+            </div>
+        </footer>
+        <!-- footer end -->
     </main>
 
 
