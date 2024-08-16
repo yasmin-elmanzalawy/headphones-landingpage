@@ -13,304 +13,307 @@
 
 
 <!--header and navbar -->
-<header>
-    <div class="d-flex align-items-center justify-content-between ">
-        <div class="logo">
-            <a href="#"><img class="w-100" src="./imgs/favicon.png" alt="the logo picture"></a>
+
+<body data-bs-spy="scroll" data-bs-target="navbar">
+    <header>
+        <div class="container">
+            <button id="toggle" class="toggle"><i id="toggleIcon" class="fas fa-border-all "></i></button>
+
+            <nav id="navbar" class="navbar px-3 mb-3">
+                <div class="logo">
+                    <a href="#"><img class="w-100" src="./imgs/favicon.png" alt="the logo picture"></a>
+                </div>
+                <ul data-visible="false" id="nav-menu" class="nav-menu d-flex gap-3 nav nav-pills">
+                    <li><a class="nav-link " href="#home">HOME</a></li>
+                    <li><a class="nav-link" href="#specs">SPECS</a></li>
+                    <li><a class="nav-link" href="#case">CASE</a></li>
+                    <li><a class="nav-link" href="#products">PRODUCTS</a></li>
+                </ul>
+            </nav>
         </div>
-        <button id="toggle" class="toggle"><i id="toggleIcon" class="fas fa-border-all "></i></button>
-        <nav>
-            <ul data-visible="false" id="nav-menu" class="nav-menu d-flex gap-3">
-                <li><a href="home">HOME</a></li>
-                <li><a href="specs">SPECS</a></li>
-                <li><a href="case">CASE</a></li>
-                <li><a href="products">PRODUCTS</a></li>
-            </ul>
-        </nav>
-    </div>
-</header>
-
-
-
-<body>
+    </header>
     <main>
-        <!-- home start -->
-        <section id="home" class="container section">
-            <div class="row container">
-                <div class="col-sm-6 position-relative  ">
-                    <div class="home-img overflow-hidden">
-                        <img class="w-100" src="./imgs/home.png" alt="beats studio 3 ">
-                    </div>
-                </div>
-                <div class="col-sm-6 home-content-container">
-                    <div class="home-content px-3">
-                        <h1 class="title mx-3">On ear</h1>
-                        <h3 class="home-subhead
-                        mb-5">Beats 3</h3>
-                        <div class="overview-sec">
-                            <h4 class="fs-3">Overview</h4>
-                            <p class="fs-4">Enjoy award-winning Beats sound with wireless listening freedom and a sleek,
-                                streamlined
-                                design with
-                                comfortable padded earphones, delivering first-rate playback.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <button class="d-block add-to-bag fw-bold">Add to bag $299</button>
-            <div class="container mt-5">
+        
+        <div data-bs-spy="scroll" data-bs-target="#navbar" data-bs-root-margin="0px 0px -40%"
+            data-bs-smooth-scroll="true" class="scrollspy-example p-3 rounded-2" tabindex="0">
+
+            <!-- home start -->
+            <section id="home" class="container section">
                 <div class="row container">
-
-                    <div class="col-lg-3 col-md-6">
-                        <div class="p-3 sponser m-auto">
-                            <img class="w-100" src="./imgs/sponsor1.png" alt="apple">
+                    <div class="col-sm-6 position-relative  ">
+                        <div class="home-img overflow-hidden">
+                            <img class="w-100" src="./imgs/home.png" alt="beats studio 3 ">
                         </div>
                     </div>
-
-                    <div class="col-lg-3 col-md-6">
-                        <div class="p-3 sponser m-auto">
-                            <img class="w-100" src="./imgs/sponsor2.png" alt="spotify">
-                        </div>
-                    </div>
-
-                    <div class="col-lg-3 col-md-6">
-                        <div class="p-3 sponser m-auto">
-                            <img class="w-100" src="./imgs/sponsor3.png" alt="amazon">
-                        </div>
-                    </div>
-
-                    <div class="col-lg-3 col-md-6">
-                        <div class="p-3 sponser m-auto">
-                            <img class="w-100" src="./imgs/sponsor4.png" alt="youtube">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-
-
-        <!-- specs section start-->
-        <section id="specs" class="container py-5 section">
-
-            <div class="my-5">
-                <h2 class="text-center title">SPECS</h2>
-            </div>
-            <div class="row">
-                <div class="col-6">
-                    <div class="text-center">
-                        <div class="ps-5 row">
-                            <div><i class="fab fa-bluetooth-b"></i></div>
-                            <div>
-                                <h5>Connection<h5>
-                            </div>
-                            <div>
-                                <p>Bluetooth v5.2
-                                </p>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div><i class="fa-solid fa-battery-full"></i></div>
-                            <div>
-                                <h5>Battery<h5>
-                            </div>
-                            <div>
-                                <p>Duration 40h
-                                </p>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div><i class="fa-solid fa-bolt"></i></i></div>
-                            <div>
-                                <h5>Load
-                                    <h5>
-                            </div>
-                            <div>
-                                <p>Fast charge 4.2-AAC
-
-                                </p>
-                            </div>
-                        </div>
-                        <div class="ps-5 row">
-                            <div><i class="fa-solid fa-microphone-lines"></i></div>
-                            <div>
-                                <h5>Microphone<h5>
-                            </div>
-                            <div>
-                                <p>Supports Apple Siri <br>
-                                    and Google
-                                </p>
+                    <div class="col-sm-6 home-content-container">
+                        <div class="home-content px-3">
+                            <h1 class="title mx-3">On ear</h1>
+                            <h3 class="home-subhead
+                            mb-5">Beats 3</h3>
+                            <div class="overview-sec">
+                                <h4 class="fs-3">Overview</h4>
+                                <p class="fs-4">Enjoy award-winning Beats sound with wireless listening freedom and a
+                                    sleek,
+                                    streamlined
+                                    design with
+                                    comfortable padded earphones, delivering first-rate playback.</p>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-6 d-flex align-items-center justify-content-center">
-                    <div class="specs-img m-auto "><img class="w-100" src="./imgs/specs.png" alt="specs picture"></div>
-                </div>
+                <button class="d-block add-to-bag btn fw-bold">Add to bag $299</button>
+                <div class="container mt-5">
+                    <div class="row container">
 
-            </div>
-        </section>
-        <!-- specs section end-->
-
-        <!-- case section start -->
-        <section id="case" class="container section py-5">
-            <div class="my-5">
-                <h2 class="text-center title">Case</h2>
-                <div class="row my-5">
-                    <div class="col-md-6 col-xsm-12 align-self-center">
-                        <div class="p-5 fs-4 text-center">
-                            <p>With a comfortable and <br> adaptable case so that you <br> can store it whenever you
-                                want, <br> and
-                                keep your durability forever.</p>
-                            <button class="case-btn btn"><i class="fa-solid fa-circle-info"></i> More info</button>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-xsm-12">
-                        <div class="case-img m-auto">
-                            <img class="w-100" src="./imgs/case.png" alt="case Picture">
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="shop-now my-5">
-                <div class="row shop-row pt-5 rounded-4">
-                    <div class="col-md-6 col-sm-12 align-self-center text-center">
-                        <div>
-                            <h4>Immerse yourself in
-                                your music</h4>
-                            <p>Get it now, up to 50% off.</p>
-                            <button class="btn shop-btn"><i class="fa-solid fa-bag-shopping pointer px-2"></i>Shop
-                                Now</button>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-sm-12">
-                        <div class="discount-img m-auto">
-                            <img class="w-100" src="./imgs/discount.png" alt="discount picture">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- case section end -->
-
-        <!-- products section start -->
-        <section class="section container py-5">
-            <h2 class="text-center title">Choose
-                Your Style</h2>
-            <div class="row container m-auto">
-                <div class="col-lg-4 col-md-6 position-relative">
-                    <div class="product-box m5 mt-5 m-auto">
-                        <div class="product-content">
-                            <div class="product-img m-auto  ">
-                                <img class="w-100" src="./imgs/product1.png" alt="product one image ">
+                        <div class="col-lg-3 col-md-6">
+                            <div class="p-3 sponser m-auto">
+                                <img class="w-100" src="./imgs/sponsor1.png" alt="apple">
                             </div>
-                            <div class="mt-4">
-                                <h5 class="fw-bolder">Black</h5>
-                                <div class=" d-flex align-items-center justify-content-between">
-                                    <p class="m-0 fw-bold">$249</p>
-                                    <button class="bg-transparent border-0 text-white"> <i
-                                            class="fa-solid fa-bag-shopping pointer px-2"></i></button>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6">
+                            <div class="p-3 sponser m-auto">
+                                <img class="w-100" src="./imgs/sponsor2.png" alt="spotify">
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6">
+                            <div class="p-3 sponser m-auto">
+                                <img class="w-100" src="./imgs/sponsor3.png" alt="amazon">
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6">
+                            <div class="p-3 sponser m-auto">
+                                <img class="w-100" src="./imgs/sponsor4.png" alt="youtube">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- specs section start-->
+            <section id="specs" class=" animation-h container py-5 section">
+                <div class="my-3">
+                    <h2 class="text-center title">SPECS</h2>
+                </div>
+                <div class="row">
+                    <div class="col-6 specs-content">
+                        <div class="text-center">
+                            <div class="ps-5 row">
+                                <div><i class="fab fa-bluetooth-b"></i></div>
+                                <div>
+                                    <h5>Connection<h5>
+                                </div>
+                                <div>
+                                    <p>Bluetooth v5.2
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div><i class="fa-solid fa-battery-full"></i></div>
+                                <div>
+                                    <h5>Battery<h5>
+                                </div>
+                                <div>
+                                    <p>Duration 40h
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div><i class="fa-solid fa-bolt"></i></i></div>
+                                <div>
+                                    <h5>Load
+                                        <h5>
+                                </div>
+                                <div>
+                                    <p>Fast charge 4.2-AAC
+
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="ps-5 row">
+                                <div><i class="fa-solid fa-microphone-lines"></i></div>
+                                <div>
+                                    <h5>Microphone<h5>
+                                </div>
+                                <div>
+                                    <p>Supports Apple Siri <br>
+                                        and Google
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 d-flex align-items-center justify-content-center">
+                        <div class="specs-img overflow-hidden m-auto "><img class="w-100" src="./imgs/specs.png" alt="specs picture">
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+            <!-- specs section end-->
+
+            <!-- case section start -->
+            <section id="case" class="container animation-h section py-5">
+                <div class="my-5">
+                    <h2 class="text-center title">Case</h2>
+                    <div class="row my-5">
+                        <div class="col-md-6 col-xsm-12 case-content align-self-center">
+                            <div class="p-5 fs-4 text-center">
+                                <p>With a comfortable and <br> adaptable case so that you <br> can store it whenever you
+                                    want, <br> and
+                                    keep your durability forever.</p>
+                                <button class="case-btn btn"><i class="fa-solid fa-circle-info"></i> More info</button>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-xsm-12">
+                            <div class="case-img overflow-hidden m-auto">
+                                <img class="w-100" src="./imgs/case.png" alt="case Picture">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="shop-now my-5">
+                    <div class="row shop-row pt-5 rounded-4">
+                        <div class="col-md-6 col-sm-12 align-self-center text-center">
+                            <div class="discount-content">
+                                <h4>Immerse yourself in
+                                    your music</h4>
+                                <p>Get it now, up to 50% off.</p>
+                                <button class="btn shop-btn"><i class="fa-solid fa-bag-shopping pointer px-2"></i>Shop
+                                    Now</button>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-12">
+                            <div class="discount-img overflow-hidden m-auto">
+                                <img class="w-100" src="./imgs/discount.png" alt="discount picture">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- case section end -->
+
+            <!-- products section start -->
+            <section id="products" class="section container  animation-h py-5">
+                <h2 class="text-center title">Choose
+                    Your Style</h2>
+                <div class="row container m-auto">
+                    <div class="col-lg-4 col-md-6  position-relative">
+                        <div class="product-box m5 mt-5 m-auto">
+                            <div class="product-content">
+                                <div class="product-img overflow-hidden m-auto  ">
+                                    <img class="w-100" src="./imgs/product1.png" alt="product one image ">
+                                </div>
+                                <div class="mt-4">
+                                    <h5 class="fw-bolder">Black</h5>
+                                    <div class=" d-flex align-items-center justify-content-between">
+                                        <p class="m-0 fw-bold">$249</p>
+                                        <button class="bg-transparent border-0 text-white"> <i
+                                                class="fa-solid fa-bag-shopping pointer px-2"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 position-relative">
+                        <div class="product-box m5 mt-5 m-auto">
+                            <div class="product-content">
+                                <div class="product-img overflow-hidden m-auto  ">
+                                    <img class="w-100" src="./imgs/product2.png" alt="product two image">
+                                </div>
+                                <div class="mt-4">
+                                    <h5 class="fw-bolder">Red Black</h5>
+                                    <div class=" d-flex align-items-center justify-content-between">
+                                        <p class="m-0 fw-bold">$249</p>
+                                        <button class="bg-transparent border-0 text-white"> <i
+                                                class="fa-solid fa-bag-shopping pointer px-2"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 position-relative">
+                        <div class="product-box m5 mt-5 m-auto">
+                            <div class="product-content">
+                                <div class="product-img overflow-hidden m-auto  ">
+                                    <img class="w-100" src="./imgs/product3.png" alt="product three image">
+                                </div>
+                                <div class="mt-4">
+                                    <h5 class="fw-bolder">Night Black
+                                    </h5>
+                                    <div class=" d-flex align-items-center justify-content-between">
+                                        <p class="m-0 fw-bold">$249</p>
+                                        <button class="bg-transparent border-0 text-white"> <i
+                                                class="fa-solid fa-bag-shopping pointer px-2"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 position-relative">
+                        <div class="product-box m5 mt-5 m-auto">
+                            <div class="product-content">
+                                <div class="product-img overflow-hidden m-auto  ">
+                                    <img class="w-100" src="./imgs/product4.png" alt="product four image">
+                                </div>
+                                <div class="mt-4">
+                                    <h5 class="fw-bolder">Blue</h5>
+                                    <div class=" d-flex align-items-center justify-content-between">
+                                        <p class="m-0 fw-bold">$249</p>
+                                        <button class="bg-transparent border-0 text-white"> <i
+                                                class="fa-solid fa-bag-shopping pointer px-2"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 position-relative">
+                        <div class="product-box m5 mt-5 m-auto">
+                            <div class="product-content">
+                                <div class="product-img overflow-hidden m-auto  ">
+                                    <img class="w-100" src="./imgs/product5.png" alt="product five image ">
+                                </div>
+                                <div class="mt-4">
+                                    <h5 class="fw-bolder">Twilight gray
+                                    </h5>
+                                    <div class=" d-flex align-items-center justify-content-between">
+                                        <p class="m-0 fw-bold">$249</p>
+                                        <button class="bg-transparent border-0 text-white"> <i
+                                                class="fa-solid fa-bag-shopping pointer px-2"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 position-relative">
+                        <div class="product-box m5 mt-5 m-auto">
+                            <div class="product-content">
+                                <div class="product-img overflow-hidden m-auto  ">
+                                    <img class="w-100" src="./imgs/product1.png" alt="product image 1">
+                                </div>
+                                <div class="mt-4">
+                                    <h5 class="fw-bolder">MidnightBlack</h5>
+                                    <div class=" d-flex align-items-center justify-content-between">
+                                        <p class="m-0 fw-bold">$249</p>
+                                        <button class="bg-transparent border-0 text-white"> <i
+                                                class="fa-solid fa-bag-shopping pointer px-2"></i></button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 position-relative">
-                    <div class="product-box m5 mt-5 m-auto">
-                        <div class="product-content">
-                            <div class="product-img m-auto  ">
-                                <img class="w-100" src="./imgs/product2.png" alt="product two image">
-                            </div>
-                            <div class="mt-4">
-                                <h5 class="fw-bolder">Red Black</h5>
-                                <div class=" d-flex align-items-center justify-content-between">
-                                    <p class="m-0 fw-bold">$249</p>
-                                    <button class="bg-transparent border-0 text-white"> <i
-                                            class="fa-solid fa-bag-shopping pointer px-2"></i></button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 position-relative">
-                    <div class="product-box m5 mt-5 m-auto">
-                        <div class="product-content">
-                            <div class="product-img m-auto  ">
-                                <img class="w-100" src="./imgs/product3.png" alt="product three image">
-                            </div>
-                            <div class="mt-4">
-                                <h5 class="fw-bolder">Night Black
-                                </h5>
-                                <div class=" d-flex align-items-center justify-content-between">
-                                    <p class="m-0 fw-bold">$249</p>
-                                    <button class="bg-transparent border-0 text-white"> <i
-                                            class="fa-solid fa-bag-shopping pointer px-2"></i></button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 position-relative">
-                    <div class="product-box m5 mt-5 m-auto">
-                        <div class="product-content">
-                            <div class="product-img m-auto  ">
-                                <img class="w-100" src="./imgs/product4.png" alt="product four image">
-                            </div>
-                            <div class="mt-4">
-                                <h5 class="fw-bolder">Blue</h5>
-                                <div class=" d-flex align-items-center justify-content-between">
-                                    <p class="m-0 fw-bold">$249</p>
-                                    <button class="bg-transparent border-0 text-white"> <i
-                                            class="fa-solid fa-bag-shopping pointer px-2"></i></button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 position-relative">
-                    <div class="product-box m5 mt-5 m-auto">
-                        <div class="product-content">
-                            <div class="product-img m-auto  ">
-                                <img class="w-100" src="./imgs/product5.png" alt="product five image ">
-                            </div>
-                            <div class="mt-4">
-                                <h5 class="fw-bolder">Twilight gray
-                                </h5>
-                                <div class=" d-flex align-items-center justify-content-between">
-                                    <p class="m-0 fw-bold">$249</p>
-                                    <button class="bg-transparent border-0 text-white"> <i
-                                            class="fa-solid fa-bag-shopping pointer px-2"></i></button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 position-relative">
-                    <div class="product-box m5 mt-5 m-auto">
-                        <div class="product-content">
-                            <div class="product-img m-auto  ">
-                                <img class="w-100" src="./imgs/product1.png" alt="product image 1">
-                            </div>
-                            <div class="mt-4">
-                                <h5 class="fw-bolder">MidnightBlack</h5>
-                                <div class=" d-flex align-items-center justify-content-between">
-                                    <p class="m-0 fw-bold">$249</p>
-                                    <button class="bg-transparent border-0 text-white"> <i
-                                            class="fa-solid fa-bag-shopping pointer px-2"></i></button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- products section end -->
+            </section>
+            <!-- products section end -->
+        </div>
 
         <!-- footer start -->
         <footer class="mt-5">
-            <div class="container footer-container">
+            <div class="container footer-container overflow-hidden">
                 <div class="row container m-auto">
                     <div class="col-lg-3 mt-5 m-auto col-md-6">
                         <div>
@@ -356,6 +359,7 @@
             </div>
         </footer>
         <!-- footer end -->
+
     </main>
 
 
@@ -363,9 +367,9 @@
 
 
 
-
-    <script src="./js/jquery-git.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
     <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/jquery-git.min.js"></script>
     <script defer src="./js/index.js"></script>
 </body>
 

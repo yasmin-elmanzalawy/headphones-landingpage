@@ -28,13 +28,16 @@ body {
   max-width: 1000px;
 }
 .title {
-  background-image: linear-gradient(rgb(58, 58, 58), rgb(229, 229, 229));
+  background-image: linear-gradient(rgb(255, 255, 255), rgb(132, 132, 132));
   background-clip: text;
   color: transparent;
   font-size: 3rem;
   font-weight: 700;
 }
-/* navbarn and header start */
+.animation-h{
+  overflow:hidden;
+}
+/* navbar and header start */
 header {
   position: fixed;
   left: 0;
@@ -45,7 +48,7 @@ header {
 .logo {
   width: 30px;
 }
-nav ul li{
+nav ul li {
   background-color: #50076f57;
   backdrop-filter: blur(1rem);
 }
@@ -65,8 +68,15 @@ nav ul li{
 .toggle {
   display: none;
 }
-
-/* navbarn and header end */
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  background-color: rgba(0, 0, 0, 0.274);
+}
+.nav-link:focus,
+.nav-link:hover {
+  color: white;
+}
+/* navbar and header end */
 
 /* home */
 .home-img {
@@ -82,16 +92,14 @@ nav ul li{
   margin-top: 100px;
 }
 .add-to-bag {
-  margin: 100px auto 0 auto;
-  padding: 10px 30px;
-  border: none;
   color: white;
-  background: linear-gradient(rgb(144, 144, 144), rgb(5, 5, 5));
-  border-radius: 10px;
-  transition: 0.4s;
+  margin: 20px auto;
+  padding: 10px 20px;
+  background-color: rgba(0, 0, 0, 0.375);
+  transition: 0.3s;
 }
 .add-to-bag:hover {
-  background: linear-gradient(rgb(71, 71, 71), rgb(5, 5, 5));
+  background-color: rgb(33, 33, 33);
 }
 .sponser {
   width: 125px;
@@ -190,7 +198,7 @@ footer {
   background-color: rgb(18, 18, 18);
 }
 .copyright {
-  background-color: #190223;
+  background-color: #09000d;
   position: absolute;
   left: 0;
   right: 0;
@@ -215,9 +223,9 @@ footer {
   .nav-menu[data-visible="false"] {
     transform: translateX(100%);
   }
-  nav ul li{
-    background-color:transparent;
-    backdrop-filter:unset;
+  nav ul li {
+    background-color: transparent;
+    backdrop-filter: unset;
   }
   .toggle {
     display: block;
